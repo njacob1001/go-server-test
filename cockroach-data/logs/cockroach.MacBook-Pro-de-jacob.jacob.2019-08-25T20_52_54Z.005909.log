@@ -1,0 +1,34 @@
+I190825 20:52:54.363623 1 util/log/clog.go:1199  [config] file created at: 2019/08/25 20:52:54
+I190825 20:52:54.363623 1 util/log/clog.go:1199  [config] running on machine: MacBook-Pro-de-jacob
+I190825 20:52:54.363623 1 util/log/clog.go:1199  [config] binary: CockroachDB CCL v19.1.4 (x86_64-apple-darwin14, built 2019/08/06 15:29:00, go1.11.6)
+I190825 20:52:54.363623 1 util/log/clog.go:1199  [config] arguments: [cockroach start --insecure]
+I190825 20:52:54.363623 1 util/log/clog.go:1199  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg utf8=✓
+I190825 20:52:54.363621 1 cli/start.go:1033  logging to directory /Users/jacob/go/src/github.com/njacob1001/truora/cockroach-data/logs
+W190825 20:52:54.363978 1 cli/start.go:1068  RUNNING IN INSECURE MODE!
+
+- Your cluster is open for any client that can access <all your IP addresses>.
+- Any user, even root, can log in without providing a password.
+- Any user, connecting as root, can read or write any data in your cluster.
+- There is no network encryption nor authentication, and thus no confidentiality.
+
+Check out how to secure your cluster: https://www.cockroachlabs.com/docs/v19.1/secure-a-cluster.html
+W190825 20:52:54.364119 1 cli/start.go:944  Using the default setting for --cache (128 MiB).
+  A significantly larger value is usually needed for good performance.
+  If you have a dedicated server a reasonable setting is --cache=.25 (2.0 GiB).
+W190825 20:52:54.364169 1 cli/start.go:957  Using the default setting for --max-sql-memory (128 MiB).
+  A significantly larger value is usually needed in production.
+  If you have a dedicated server a reasonable setting is --max-sql-memory=.25 (2.0 GiB).
+I190825 20:52:54.364279 1 cli/start.go:1082  CockroachDB CCL v19.1.4 (x86_64-apple-darwin14, built 2019/08/06 15:29:00, go1.11.6)
+I190825 20:52:54.468853 1 server/config.go:386  system total memory: 8.0 GiB
+I190825 20:52:54.468976 1 server/config.go:388  server configuration:
+max offset             500000000
+cache size             128 MiB
+SQL memory pool size   128 MiB
+scan interval          10m0s
+scan min idle time     10ms
+scan max idle time     1s
+event log enabled      true
+I190825 20:52:54.469015 1 cli/start.go:929  process identity: uid 501 euid 501 gid 20 egid 20
+I190825 20:52:54.469043 1 cli/start.go:554  starting cockroach node
+E190825 20:52:59.477350 1 cli/error.go:229  failed to start server: invalid --advertise-addr: lookup MacBook-Pro-de-jacob.local: no such host
+Error: failed to start server: invalid --advertise-addr: lookup MacBook-Pro-de-jacob.local: no such host
