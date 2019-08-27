@@ -1,1 +1,0 @@
-/Users/jacob/go/src/github.com/njacob1001/truora/cockroach-data/cockroach-temp906060456
